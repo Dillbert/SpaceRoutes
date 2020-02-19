@@ -1,9 +1,7 @@
-Commmits - 
-
+Commits referring to tech - 
 FirstTime = Angular app
 Add files via upload = Java populate DB, dont need to enter folder just read the populateNationExpressDb.java
 API = node api
-
 
 Tech Used
 Server is running Linux 16.04. stack is apache mysql node.js angular 8
