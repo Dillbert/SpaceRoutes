@@ -6,6 +6,7 @@ API = node api
 
 
 Tech Used
+Server is running Linux 16.04. stack is apache mysql node.js angular 8
 
 Database is MySQL to set up the database make sure remote server has MySQL 5.7 installed - can be installed through apt.
 Run service mysql start
