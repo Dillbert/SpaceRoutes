@@ -1,0 +1,18 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container" style="justify-content:start">
+        <div class="navbar-header">
+            <a class="navbar-brand">Space Routes</a>
+        </div>
+        <button class="btn-primary" (click)="toggleHomePage()">Home</button>
+        <button class="btn-primary" (click)="toggleScheduleView()">Full Schedule</button>
+    </div>
+</nav>
+<div class="container">
+    <div *ngIf="showHomePage" class="row">
+        <div *ngFor="let planet of planets">
+            <img src={{planet.srcImg}} alt={{planet.planetName}} (click)="togglePlanetView(planet)" class="img-fluid">
+        </div>
+    </div>
+    <app-schedule *ngIf="showSchedule" [displaySchedule]="schedule"></app-schedule>
+    <app-single-planet *ngIf="showPlanetView" [fullSchedule]="schedule" [planet]="planetToShowRoutesFor"></app-single-planet>
+</div>

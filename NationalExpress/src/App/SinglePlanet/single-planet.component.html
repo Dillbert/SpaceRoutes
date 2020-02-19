@@ -1,0 +1,84 @@
+<div>
+    <h1>{{planet.planetName}}</h1>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Departures
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Route name
+            </th>
+            <th>
+                Departing weekday
+            </th>
+            <th>
+                Departure Planet
+            </th>
+            <th>
+                Destination Planet
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let departure of departures">
+            <td>
+                {{departure.routeName}}
+            </td>
+            <td>
+                {{departure.departingWeekDay}}
+            </td>
+            <td>
+                {{departure.departureDisplayName}}
+            </td>
+            <td>
+                {{departure.destinationDisplayName}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Arrivals
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Route name
+            </th>
+            <th>
+                Departing weekday
+            </th>
+            <th>
+                Departure Planet
+            </th>
+            <th>
+                Destination Planet
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let destination of destinations">
+            <td>
+                {{destination.routeName}}
+            </td>
+            <td>
+                {{destination.departingWeekDay}}
+            </td>
+            <td>
+                {{destination.departureDisplayName}}
+            </td>
+            <td>
+                {{destination.destinationDisplayName}}
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,64 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Full Timetable
+            </th>
+        </tr>
+        <tr>
+            <th>
+                Route name
+            </th>
+            <th>
+                Departing weekday
+            </th>
+            <th>
+                Departure Planet
+            </th>
+            <th>
+                Destination Planet
+            </th>
+            <th>
+                Leg 1
+            </th>
+            <th>
+                Leg 2
+            </th>
+            <th>
+                Leg 3
+            </th>
+            <th>
+                Leg 4
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let schedule of displaySchedule">
+            <td>
+                {{schedule.routeName}}
+            </td>
+            <td>
+                {{schedule.departingWeekDay}}
+            </td>
+            <td>
+                {{schedule.departureDisplayName}}
+            </td>
+            <td>
+                {{schedule.destinationDisplayName}}
+            </td>
+            <td>
+                {{schedule.legOne}}
+            </td>
+            <td>
+                {{schedule.legTwo}}
+            </td>
+            <td>
+                {{schedule.legThree}}
+            </td>
+            <td>
+                {{schedule.legFour}}
+            </td>
+        </tr>
+    </tbody>
+</table>
